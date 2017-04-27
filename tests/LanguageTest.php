@@ -65,7 +65,7 @@ class LanguageTest extends TestCase
      * @param $sample
      * @dataProvider sampleProvider
      */
-    public function testSamples(string $expected, string $sample)
+    public function testSamples($expected, $sample)
     {
         $l = new Language();
 

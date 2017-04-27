@@ -1,6 +1,5 @@
 <?php
 
-declare(strict_types = 1);
 
 namespace LanguageDetection;
 
@@ -43,7 +42,7 @@ class Language extends NgramParser
      * @param string $str
      * @return LanguageResult
      */
-    public function detect(string $str): LanguageResult
+    public function detect($str)
     {
         $str = mb_strtolower($str);
 

@@ -36,7 +36,7 @@ class LanguageResultTest extends TestCase
      * @param string $sample
      * @dataProvider sampleProvider
      */
-    public function testWhitelist(string $expected, string $sample)
+    public function testWhitelist($expected, $sample)
     {
         $l = new Language();
 
@@ -48,7 +48,7 @@ class LanguageResultTest extends TestCase
      * @param string $sample
      * @dataProvider sampleProvider
      */
-    public function testBlacklist(string $expected, string $sample)
+    public function testBlacklist($expected, $sample)
     {
         $l = new Language();
 
@@ -60,7 +60,7 @@ class LanguageResultTest extends TestCase
      * @param string $sample
      * @dataProvider sampleProvider
      */
-    public function testToString(string $expected, string $sample)
+    public function testToString($expected, $sample)
     {
         $l = new Language();
 
